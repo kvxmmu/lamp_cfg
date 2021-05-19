@@ -151,6 +151,6 @@ def from_file(filename, settings,
     :return: dict
     """
 
-    with open(filename, 'r') as file:
+    with open(filename, 'r', encoding='utf-8') as file:
         return parse_cfg(file.read(), settings,
                          constants)
